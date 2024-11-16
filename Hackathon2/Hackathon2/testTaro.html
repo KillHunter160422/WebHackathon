@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body2">
+    <div class="container2">
+        <h1>HR Analysis</h1>
+        <div class="filter">
+            <label for="position">Выберите должность:</label>
+            <select id="position" name="position">
+                <option value="">Выберите должность</option>
+                <option value="Software Developer">Разработчик программного обеспечения</option>
+                <option value="Business Analyst">Бизнес-аналитик</option>
+                <option value="Software Tester">Тестировщик программного обеспечения</option>
+                <option value="System Analyst">Системный аналитик</option>
+                <option value="DevOps Engineer">Инженер DevOps</option>
+                <option value="Data Scientist">Специалист по обработке данных</option>
+                <option value="Java Developer">Разработчик Java</option>
+                <option value=".NET Developer">Разработчик .NET</option>
+                <option value="Web Developer">Веб-разработчик</option>
+                <option value="Salesforce Developer">Разработчик Salesforce</option>
+                <option value="Python Developer">Разработчик Python</option>
+                <option value="Game Developer">Разработчик игр</option>
+                <option value="Oracle SQL Developer">Разработчик Oracle SQL</option>
+                <option value="Manual Tester">Инженер по ручному тестированию</option>
+                <option value="Automation Tester">Тестировщик автоматизации</option>
+                <option value="Database Tester">Тестировщик баз данных</option>
+                <option value="EDP Tester">EDP-тестировщик</option>
+                <option value="Performance Tester">Тестировщик производительности</option>
+                <option value="Mobile Tester">Инженер по мобильному тестированию</option>
+                <option value="Middleware Tester">Тестировщик промежуточного программного обеспечения</option>
+            </select>
+        </div>
+        <div class="tarot-analysis">
+            <h2>Анализ с использованием карт Таро</h2>
+            <div id="tarot-cards">
+                <!-- Карты Таро будут отображаться здесь -->
+            </div>
+            <button id="draw-cards">Вытянуть карты</button>
+            <script>
+                document.getElementById('draw-cards').addEventListener('click', function() {
+                    window.location.href = 'TaroCartDeck.html'
+        });
+        </script>
+        </div>
+    </div>
+</body>
+</html>
